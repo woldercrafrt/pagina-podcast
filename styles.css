@@ -55,12 +55,16 @@ body {
 
 /* Navegación */
 .navbar {
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, top 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .nav-link {
     color: white !important;
     transition: color 0.3s ease;
+    margin: 0 15px;
 }
 
 .nav-link:hover {
