@@ -1,0 +1,214 @@
+:root {
+    --primary-blue: #1a75ff;
+    --secondary-blue: #003d99;
+    --primary-grey: #343a40;
+    --secondary-grey: #6c757d;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/WZ2-S04R-ANNOUNCEMENT-TOUT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url(call-of-duty-franchise-hub-keyart-01-en-21nov23.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(11, 22, 39);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navegación */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Secciones */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    color: var(--primary-grey);
+    margin-bottom: 2rem;
+}
+
+/* Galería */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones */
+[data-aos] {
+    opacity: 0;
+    transition-duration: 0.8s;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Multimedia Section */
+.multimedia-section {
+    position: relative;
+    background-image: url('https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/WZ2-S04R-ANNOUNCEMENT-TOUT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80vh;
+}
+
+.multimedia-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Audio Container */
+.audio-container {
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.audio-image {
+    margin-bottom: 20px;
+}
+
+.audio-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.audio-player {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.custom-audio {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.custom-audio::-webkit-media-controls-panel {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.custom-audio::-webkit-media-controls-current-time-display,
+.custom-audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-grey);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+}
+
+.rowa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
